@@ -250,3 +250,14 @@ footer {
 .whitepaper-button a:hover {
     background: #333;
 }
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+}
