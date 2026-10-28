@@ -207,6 +207,7 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+    font-family: Arial, sans-serif;
 }
 
 
@@ -250,14 +251,240 @@ footer {
 .whitepaper-button a:hover {
     background: #333;
 }
-@media (max-width: 768px) {
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
+
+
+/* Адаптация под телефоны */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+img,
+video,
+iframe {
+    max-width: 100%;
+}
+
+@media (max-width: 200px) {
+    body {
+        font-size: 16px;
     }
 
-    nav a {
+    header {
+        padding: 15px 5%;
+    }
+
+    section {
+        padding: 35px 5%;
+    }
+
+    h1 {
+        font-size: clamp(28px, 8vw, 40px);
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: clamp(23px, 6vw, 30px);
+    }
+
+    p {
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+    }
+
+    button,
+    .btn,
+    a.button {
+        max-width: 100%;
+    }
+
+    footer {
+        padding: 25px 5%;
+        text-align: center;
+    }
+}
+
+.logo-image {
+    display: block;
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    /* position: fixed; */
+    top: 20px;
+    left: 10px;
+    margin-bottom: 20px;
+
+}
+
+.one {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.asia {
+    margin-left: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.coin {
+    margin-left: 78px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+
+.document-pages {
+    width: auto;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.document-pages img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 24px;
+    border-radius: 4px;
+}
+
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 22px;
+    margin: 20px;
+    color: #ffffff;
+    background: linear-gradient(145deg, #151515, #242424);
+    border: 1px solid rgba(212, 175, 55, 0.55);
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.back-button:hover {
+    background: #d4af37;
+    color: #111;
+    border-color: #d4af37;
+    transform: translateX(-3px);
+    box-shadow: 0 4px 18px rgba(212, 175, 55, 0.2);
+}
+
+.back-arrow {
+    font-size: 22px;
+    line-height: 1;
+}
+
+.back-button:focus-visible {
+    outline: 2px solid #d4af37;
+    outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+    .back-button {
+        margin: 14px;
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+}
+
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 22px;
+    margin: 20px;
+    color: #d4af37;
+    background: linear-gradient(145deg, #151515, #242424);
+    border: 1px solid rgba(212, 175, 55, 0.55);
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.back-button:hover {
+    background: #d4af37;
+    color: #111;
+    border-color: #d4af37;
+    transform: translateX(-3px);
+    box-shadow: 0 4px 18px rgba(212, 175, 55, 0.2);
+}
+
+.back-arrow {
+    font-size: 22px;
+    line-height: 1;
+}
+
+.back-button:focus-visible {
+    outline: 2px solid #d4af37;
+    outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+    .back-button {
+        margin: 14px;
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+}
+
+.about {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 22px;
+    margin: 20px;
+    color: #d4af37;
+    background: linear-gradient(145deg, #151515, #242424);
+    border: 1px solid rgba(212, 175, 55, 0.55);
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.back-button:hover {
+    background: #d4af37;
+    color: #111;
+    border-color: #d4af37;
+    transform: translateX(-3px);
+    box-shadow: 0 4px 18px rgba(212, 175, 55, 0.2);
+}
+
+.back-arrow {
+    font-size: 22px;
+    line-height: 1;
+}
+
+.back-button:focus-visible {
+    outline: 2px solid #d4af37;
+    outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+    .back-button {
+        margin: 14px;
+        padding: 10px 16px;
         font-size: 14px;
     }
 }
